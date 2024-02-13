@@ -1,0 +1,62 @@
+ Javascript
+------------
+- JS can be used in both front-end as well as back-end
+- to provide behaviour - front-end
+- to do logical operations- back-end
+- is a single thread programming language - line by line execution
+- dynamically typed language - dataType can be changed
+
+js is compiled using node.
+extention: .js
+
+display content - console.log();
+
+DATA TYPES - total no.of data-type 8 
+----------
+1) string - single / double quotes
+2) boolean - true or false
+3) number - integer/decimal
+
+method to check data-type - typeOf()
+
+concatenation - to join/add same or different dataType
+-------------
+string + string = string
+string + number = string
+number + number = number
+
+Variables
+---------
+-used to store data
+-to create variables - identifiers -
+     set of rules to create variables.
+   rules: 1) start with letter, $, _ :prefer letter
+          2) subsequent characters can be letters, digits, underscore
+          3) if there is more than 1 word : 
+               - 2nd word can be started with capital letter
+               - use underscore between the words
+               - no space between the words
+
+   variableName = value;
+
+   keyword variableName = value;
+
+   keyword - set of reserved words which gives a special meaning to variables.
+           - cannot be used as variable-name , fn name etc.
+     1) const - value doesn't change - re-assigning is not possible
+                    - hoisting is not possible
+     2) var - value changes throughout - re-assigning is possible
+                    - hoisting is possible
+     3) let - re-assigning is possible
+            - block level access
+            - hoisting is not possible
+
+- hoisting : using variables before it is declared/created
+
+template literals
+-----------------
+- it's a way of displaying content.
+  `content ${variables}`
+
+  Operator
+  --------
