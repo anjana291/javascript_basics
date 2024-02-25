@@ -25,6 +25,9 @@ string + string = string
 string + number = string
 number + number = number
 
+string* number = number
+Number(str)
+
 Variables
 ---------
 -used to store data
@@ -60,3 +63,196 @@ template literals
 
   Operator
   --------
+  1) Assignment : =
+  2) Arithmetic : 
+        addition : +
+        substraction : -
+        division : /
+        multiplication : *
+        modules : %
+        exponential : power **
+  3) Relational : returns true/false
+        > , < , <= ,>= , ==, ===
+        = :assigns value
+        == : checks values
+        === : checks values and dataType.
+  4) Logical : joins two or more relational Operators
+               returns true/false
+        AND (&&)
+        T && T = T 
+        T && F = F
+        F && T = F
+        F && F = F
+        OR (||)
+        T || T = T 
+        T || F = T
+        F || T = T
+        F || F = F
+        NOT (!)
+        !T = F 
+        !F = T 
+  5) increment/decrement :
+     (++) (--)
+     x = 10
+     x++ = 10+1 = 11
+     x-- = 10-1 = 9
+  6) shorthand operator :
+     x = x+y : x+=y
+     x = x-y : x-=y
+  7) ternary :
+     condition?true 'statement' : false 'statement' 
+
+  conditional statements/decision making statements
+  -------------------------------------------------
+  1) if-else
+        if(condition){
+            statement
+        }
+        else if{
+            statement
+        }
+        else{
+            statement
+        }
+  2) while
+  Looping statement
+  ------------------
+  -to do task repeatedly
+  1)while Loop
+
+  syntax
+  ------
+  variable initialisation
+  while(condition){
+      task
+      condition to exit the loop(increment/decrement)
+  }
+  
+  2)for Loop
+
+  syntax
+  ------
+  for(initialisation;condition;exit)
+  {
+        statements;      
+  }
+
+--break : 
+nested loop - loop within a loop
+-------------------------------------------
+  math.floor() :removes decimal points
+
+  functions
+  ---------
+1=>) Normal function
+  -used to do same task repeatedly at different locations.
+  -it has 2 parts
+  1) function definition
+      -task to do repeatedly in different locations
+      -syntax
+      --------
+      function function_name(arg1.....argn){
+            task;
+      }
+      arg-variables to do additional data
+  2) function call
+      -to execute task
+      -syntax
+      --------
+      function_name(arg1.....argn);
+     
+   functional hoisting : to call a function before its definition
+   function hoisting can be done for normal function
+ 
+ return a variable to access it outside the function
+
+ 2=>) Arrow function
+      better performance than normal function
+      syntax
+      ------
+      function definition:
+      keyword variable = (arg1.....argn) =>{
+
+      }
+
+      function call:
+      variable();
+
+3=>) Predefined function:
+      already defined fns
+     eg. console.log(),ParseInt(),math.floor(),typeOf() : fn call
+
+4=>) Call Back function:
+      a function calling another function.
+
+      setTimeOut : Predefined callback function
+            to execute a piece of code with time delay
+
+5=>) Asynchronous functions: functions which has time delay
+eg: setTimeOut, api calls
+6=>) Synchronous functions: functions which doesn't have any time delay
+
+7=>) Nested functions:function definition inside another function
+     closure property: fn/variable inside parent can be accesssed inside child
+                       variables inside child cannot be accessed inside parent  
+
+DATASTRUCTURE
+-------------
+-format of organizing, retrieving, processing and storing data.
+
+eg: array, list, linkedlist, stack, queue, tree graph
+
+Array
+-----
+-unlike variables array can store more than one data/value.
+-can store more than one dataType.
+-array in js is infinite.
+
+-definition - array is singl variable that can store more than one value of different dataType 
+that are separated by commas and enclosed within square bracket 
+
+-store - key:value
+
+key: index position
+value: data
+
+index - indicates the position of elements in an array
+index value 
+      starts from : 0  
+      ends at : length-1
+
+length : no,of items/ data inside the array
+  start from 1
+
+representation/syntax :
+      keyword variable = [item1,......,itemN]
+
+Array operations
+----------------
+1) push() : to add data to an array 'at the end'
+2) unshift() : to add data to an array 'at the beginning'
+3) pop() : to remove an item from array 'at the end'
+4) shift() : to remove item from array 'at the beginning'
+
+different way of accessing array elements
+-----------------------------------------
+1)for loop
+      for(index=0;index<fruits.length;index++){
+            console.log(fruits[index]);
+      }
+2)for in - directly access the index of an array
+      for(let y in fruits){
+            console.log(y);
+      }
+3)for of - directly acces the value of an array
+      for(let z of fruits){
+            console.log(z);
+      }
+
+
+truthy operator: only if condition is present
+
+Linear Search : checking each value one bu one.
+                program efficiency is decreased. 
+Binary Search : requires only half time of linear search.i.e, time delay is reduced  
+                  
