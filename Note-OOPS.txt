@@ -1,0 +1,24 @@
+OBJECT ORIENTED PROGRAMMING(oops)
+---------------------------------
+-modern programming paradigm(style) which consider real time entity into objects and class
+
+-Basic
+------
+
+1) class - Blueprint which contains common feature from which different objects can be created
+2) object -  
+3) reference - 
+
+methods - function inside a class
+property - variables inside a class
+constructor - used to initialise properties
+            - a methodwhich is self invoking
+
+class creation syntax:
+
+class className{
+    //property
+    //constructor
+    //method
+    //these three are optional not mandatory
+}

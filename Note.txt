@@ -16,6 +16,7 @@ DATA TYPES - total no.of data-type 8
 1) string - single / double quotes
 2) boolean - true or false
 3) number - integer/decimal
+4) object 
 
 method to check data-type - typeOf()
 
@@ -204,7 +205,7 @@ eg: array, list, linkedlist, stack, queue, tree graph
 
 Array
 -----
--unlike variables array can store more than one data/value.
+-unlike variables,array can store more than one data/value.
 -can store more than one dataType.
 -array in js is infinite.
 
@@ -233,6 +234,17 @@ Array operations
 2) unshift() : to add data to an array 'at the beginning'
 3) pop() : to remove an item from array 'at the end'
 4) shift() : to remove item from array 'at the beginning'
+5) sort() : to arrange the array
+6) forEach() : to access each item from array - it returns void
+7) map(callback) : it creates a new array having same number of elements in the parent array
+8) reduce(callback) :expecting a single value. eg. highest,lowest,sum
+9) filter() : to create a new array having elements that satisfy a particular condition
+10)flat() : to change the dimension
+11)some() : returns boolean value based on condition
+12)find() : returns first value of array that satisfy a particular condition
+13)includes(): returns boolean value based on items
+14)reduceRight()-iterationstarts from right
+depth: infinite
 
 different way of accessing array elements
 -----------------------------------------
@@ -252,7 +264,63 @@ different way of accessing array elements
 
 truthy operator: only if condition is present
 
-Linear Search : checking each value one bu one.
+Linear Search : checking each value one by one.
                 program efficiency is decreased. 
 Binary Search : requires only half time of linear search.i.e, time delay is reduced  
-                  
+
+
+string methods
+--------------
+1)toLowerCase() - convert string into small letters
+2)toUpperCase() - convert string into capital letters
+3)subString(start,end) - exclude the end index                  
+4)startsWith() - checks whether the given string is starts with a particular character and returns boolean value
+               - it is case sensitive
+5)endsWith() - checks whether the given string is ends with a particular character and returns boolean value
+             - it is case sensitive
+6)trim() - it removes space at the beginning and end of the string
+7)split()- used to split the given string
+         - gives an array
+8)Array.from()
+9)replace() - replaces 1st word that matches satisfying condition
+      case sensitive
+10)replaceAll() -replaces all words that matches satisfying condition
+      case sensitive
+11)slice(start,end)
+
+
+Object
+------
+-object can store more than 1 value with more clarity to the stored data
+-stored as key , value pairs
+-syntax:
+      objectName = {
+            key : value,
+            key1 : value1,
+            .
+            .
+            keyN : valueN
+      }
+
+operations
+----------
+-access values using key:
+1) Add an item
+      1) objectName["key"]=value
+      2) Object.assign(target,{key:value})  
+            target is objectname
+2) Delete 
+      delete objectName.key
+3) Update
+      objectName["key"]=value
+4) Get
+      1)objectName["key"]   : key can be variable,exact key
+      2)objectName.key      : requires exact key
+
+- to access key
+- in : 
+
+spread operator :  (...) to merge two arrays
+05/03/2024  -procedural programming finished
+----------
+
